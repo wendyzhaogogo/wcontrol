@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/lib/angular-wcontrol/multiTabPage/multiTabPage.css">
+<style>
+    .multiTabPage .glyphicon{
+        top:1px
+    }
+</style>
+<div class="multiTabPage">
+    <div class="multiTabPage-tabList">
+        <div class="multiTabPage-tab" ng-class="{true:'multiTabPage-tab_selected',false:'multiTabPage-tab_unselected'}[$parent.currentTab==item]"  ng-repeat="item in data">
+            <div class="multiTabPage-tab-name"   ng-bind="item.tabName" ng-click="$parent.currentTab=item">
+
+            </div>
+            <div ng-show="item.canClose" class="multiTabPage-tab-closeButton glyphicon glyphicon-remove"  ng-click="close(item)">
+                
+            </div>            
+        </div>
+    </div>
+    <!-- <div class="multiTabPage-pageLeft">
+        <div class="mutiTabPage-pageMenu">
+            �˵�
+        </div>
+    </div> -->
+    <div class="multiTabPage-pageList">
+        <div ng-show="$parent.currentTab==item" class="multiTabPage-page" include-params="item.params" controller="item.controller" ng-include-x="item.templateUrl"
+            ng-repeat="item in data"></div>
+    </div>
+</div>

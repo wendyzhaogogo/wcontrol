@@ -1,0 +1,69 @@
+.multiTabPage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.multiTabPage-tabList{
+    padding-top: 0.5em;
+    height:45px;
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F2F2F2;    
+}
+
+.multiTabPage-tab{
+    height:100%;
+    margin: 0px 7px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 7px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid #EFEFEF;
+    border-left: 1px solid #EFEFEF;
+    border-right: 1px solid #EFEFEF;
+    cursor: pointer;
+}
+
+.multiTabPage-tab_unselected{
+    background-color:  #EBEBEB;
+    color:#191B1F;
+}
+
+.multiTabPage-tab_selected{
+    background-color: #FFFFFF;
+    color:#2872C9; 
+}
+.multiTabPage-tab-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.multiTabPage-tab-closeButton{
+    margin-left:3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiTabPage-pageList{
+    position: relative;
+    /* width: calc(100% - 220px); */
+    height: calc(100% - 45px);
+    /* display: flex; */
+    width: 100%;
+}
+
+.multiTabPage-page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+}
