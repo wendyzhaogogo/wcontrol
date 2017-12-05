@@ -1,4 +1,4 @@
-define(['testPageModule','autoTableMergeCell'], function (app,autoTableMergeCell) {
+define(['testPageModule'], function (app) {
 
     app.controller("testPageController", function ($scope) {
 

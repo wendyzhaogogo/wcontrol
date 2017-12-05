@@ -1,51 +1,86 @@
 <!DOCTYPE html>
-<html ng-app="testPageModule" ng-controller="testPageController">
+<html ng-controller="testPageController">
 
 
 <head>
     <title>测试页面</title>
+    <link rel="stylesheet" href="css/test/testPage.css">
     <script src="lib/require.js"></script>
     <script src="js/require.config.js"></script>
     <script src="js/index.js"></script>
-
 </head>
 
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    x
-                </th>
-                <th>
-                    y
-                </th>
-                <th>
-                    z
-                </th>
-                <th>
-                    z。
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="item in list">
-                <td ng-bind="item.x">
+    <div style="display:flex;flex-direction:row">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        x
+                    </th>
+                    <th>
+                        y
+                    </th>
+                    <th>
+                        z
+                    </th>
+                    <th>
+                        z。
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in list">
+                    <td ng-bind="item.x">
 
-                </td>
-                <td ng-bind="item.y">
+                    </td>
+                    <td ng-bind="item.y">
 
-                </td>
-                <td ng-bind="item.z">
+                    </td>
+                    <td ng-bind="item.z">
 
-                </td>
-                <td ng-bind="item.z">
+                    </td>
+                    <td ng-bind="item.z">
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table auto-table-merge-cell='0,1'>
+            <thead>
+                <tr>
+                    <th>
+                        x
+                    </th>
+                    <th>
+                        y
+                    </th>
+                    <th>
+                        z
+                    </th>
+                    <th>
+                        z。
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in list">
+                    <td ng-bind="item.x">
 
+                    </td>
+                    <td ng-bind="item.y">
+
+                    </td>
+                    <td ng-bind="item.z">
+
+                    </td>
+                    <td ng-bind="item.z">
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 
