@@ -16,5 +16,6 @@ require.config({
     shim: {
         // 'autoTableMergeCell': ['tableMergeCell'],
         //'tableMergeCell': ['jquery'],
+              
     }
 });
