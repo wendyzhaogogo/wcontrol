@@ -1,4 +1,4 @@
-define(['requireLoadModule','subcontroller1'], function (app) {
+define(['requireLoadModule'], function (app) {
 
     app.controller("subcontroller3-1", function ($scope) {
        
