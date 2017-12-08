@@ -15,6 +15,8 @@ require.config({
         'jquery': "lib/jquery-1.11.1.min",
         'linq': 'lib/linq',
 
+        'needLoadModuleSet': 'lib/needLoad/needLoad-moduleSet',
+        'needLoadWrapper': 'lib/needLoad/needLoad-wrapper',
 
         'requireLoadModule': 'js/test2/requireLoadModule',
         'subcontroller1': 'js/test2/subcontroller1',
