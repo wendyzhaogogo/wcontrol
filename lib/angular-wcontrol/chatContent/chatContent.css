@@ -1,0 +1,74 @@
+
+.chatContent{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chatContent .messageRow {
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+
+.chatContent .messageRow:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+}
+
+.chatContent  .messageBubble-message {
+    display: inline-block;
+    word-wrap: break-word;  
+}
+
+.chatContent .messageBubble{
+    max-width: 80%;
+    min-width: 20%;
+   
+    padding: 10px 0px 10px 10px;
+    border-radius: 7px;
+}
+
+.chatContent .messageBubble.sender{
+    background-color: aquamarine;    
+    float: left;
+    margin: 0 20px 10px 10px;   
+}
+
+.chatContent .messageBubble.receiver{
+    background-color: gold;
+    float: right;
+    margin: 0 10px 10px 20px;
+
+}
+
+
+.right_triangle {
+    height: 0px;
+    width: 0px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent gold;
+    position: absolute;
+    left: calc(100% - 10px);
+    top: 10px;
+}
+
+.left_triangle {
+    height: 0px;
+    width: 0px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent aquamarine transparent transparent;
+    position: absolute;
+    right: calc(100% - 10px);
+    top: 10px;
+}
+
+
+

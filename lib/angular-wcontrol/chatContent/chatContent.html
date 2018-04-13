@@ -1,0 +1,12 @@
+<div class="chatContent">
+    <link rel="stylesheet" href="lib/angular-wcontrol/chatContent/chatContent.css">
+
+    <div class="messageRow" ng-repeat="item in collection">
+
+        <div class="messageBubble" ng-class="{'sender':item.type==='self','receiver':item.type==='other'}">
+            <div ng-class="{'left_triangle':item.type==='self','right_triangle':item.type==='other'}"></div>
+            <p class="messageBubble-message" ng-bind="item.message">
+            </p>
+        </div>
+    </div>
+</div>
